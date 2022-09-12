@@ -1,0 +1,84 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 1.8rem;
+}
+
+html{
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--font-size);
+    background: var(--main-BG);
+    color: var(--soft-blue);
+}
+
+.container{
+    max-width: 300px;
+    background: var(--card-BG);
+    padding: 20px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.image{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.content__header, .profile-name{
+    color: var(--white);
+}
+
+.content__header{
+    font-size: calc(var(--font-size) + 1rem);
+    font-weight: 600;
+}
+
+.line--height{
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.eth-general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth__box{
+    color: var(--cyan);
+}
+
+.eth__box, .clock__box{
+    display: flex;
+    text-align: center;
+}
+
+.margin--right{
+    margin-right: 5px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 15px;
+}
+
+.profile-img{
+    width: 36px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin-right: 10px;
+}
