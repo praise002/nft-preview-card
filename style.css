@@ -31,9 +31,31 @@ body{
     align-self: center;
 }
 
+.nft__image{
+    position: relative;
+}
+
 .image{
     max-width: 100%;
     border-radius: 7px;
+}
+
+.icon{
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    bottom: 50%;
+    left: 44%;
+    opacity: 0;
+}
+
+.image:hover{
+    cursor: pointer;
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--cyan));
+}
+
+.nft__image:hover .icon{
+    opacity: 1;
 }
 
 .content__header, .profile-name{
@@ -43,6 +65,12 @@ body{
 .content__header{
     font-size: calc(var(--font-size) + 1rem);
     font-weight: 600;
+}
+
+.content__header:hover,
+.profile-name:hover{
+    cursor: pointer;
+    color: var(--cyan);
 }
 
 .line--height{
